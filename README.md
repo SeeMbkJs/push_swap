@@ -1,26 +1,35 @@
-You have 2 stacks named a and b.
-• At the beginning:
-◦ The stack a contains a random amount of negative and/or positive numbers
-which cannot be duplicated.
-◦ The stack b is empty.
-• The goal is to sort in ascending order numbers into stack a. To do so you have the
-following operations at your disposal:
-sa (swap a): Swap the first 2 elements at the top of stack a.
-Do nothing if there is only one or no elements.
-sb (swap b): Swap the first 2 elements at the top of stack b.
-Do nothing if there is only one or no elements.
-ss : sa and sb at the same time.
-pa (push a): Take the first element at the top of b and put it at the top of a.
-Do nothing if b is empty.
-pb (push b): Take the first element at the top of a and put it at the top of b.
-Do nothing if a is empty.
-ra (rotate a): Shift up all elements of stack a by 1.
-The first element becomes the last one.
-rb (rotate b): Shift up all elements of stack b by 1.
-The first element becomes the last one.
-rr : ra and rb at the same time.
-rra (reverse rotate a): Shift down all elements of stack a by 1.
-The last element becomes the first one.
-rrb (reverse rotate b): Shift down all elements of stack b by 1.
-The last element becomes the first one.
-rrr : rra and rrb at the same time.
+42cursus' push_swap
+Development repo for 42cursus' push_swap project
+For further information about 42cursus and its projects, please refer to 42cursus repo.
+
+Summary · Resources · Rules · Operations
+SUMMARY
+The project will make you sort data on a stack, with a limited set of instructions, using the lowest number of actions. To succeed you will have to manipulate various types of algorithms and choose the most appropriate solution for an optimized data sorting.
+
+RULES
+The game is composed of 2 stacks named A and B.
+To start with:
+A contains a random number of either positive or negative numbers without any duplicates.
+B is empty.
+The goal is to sort in ascending order numbers into stack A.
+To do this, you have the following operations.
+OPERATIONS
+sa - swap a: swap the first 2 elements at the top of stack a. (do nothing if there is only one or no elements).
+sb - swap b: swap the first 2 elements at the top of stack b. (do nothing if there is only one or no elements).
+ss - ss: swap a and swap b at the same time.
+pa - push a: take the first element at the top of b and put it at top of a. (do nothing if b is empty).
+pb - push b: take the first element at the top of a an dput it at top of b. (do nothing if a is empty).
+ra - rotate a: shift up all elements of stack a by 1. the first element becomes the last one.
+rb - rotate b: shift up all elements of stack b by 1. the first element becomes the last one.
+rr - rr: rotate a and rotate b at the same time.
+rra - reverse rotate a: shift down all elements of stack a by 1. the last element becomes the first one.
+rrb - reverse rotate b: shift down all elements of stack b by 1. the last element beoomes the first one.
+rrr - rrr: reverse rotate a and reverse rotate b at the same time.
+TESTING
+Change the <number_of_random_args> with any number u want!
+make test ARG=<number_or_random_args>
+RESOURCES
+medium - understanding push_swap
+medium - Understanding Sorting Algorithms
+youtube - push_swap
+push_swap visualizer
