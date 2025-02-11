@@ -102,7 +102,7 @@ int	main(int ac, char **av)
 
 	stack_a = NULL;
 	stack_b = NULL;
-	if (ac <= 2)
+	if (ac < 2)
 		return (0);
 	check_input(av, &stack_a);
 	size = ft_lstsize(stack_a);

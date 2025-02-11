@@ -30,6 +30,9 @@ void	rrb(t_list **stack_b)
 
 void	rrr(t_list **stack_a, t_list **stack_b)
 {
-	rev_shift(stack_a);
-	rev_shift(stack_b);
+	if (*stack_a && *stack_b)
+	{
+		rev_shift(stack_a);
+		rev_shift(stack_b);
+	}
 }

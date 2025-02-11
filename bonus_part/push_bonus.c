@@ -34,7 +34,6 @@ void	pa(t_list **stack_b, t_list **stack_a)
 
 void	pb(t_list **stack_a, t_list **stack_b)
 {
-	if (!stack_a || !*stack_a || ft_lstsize(*stack_a) <= 1)
-		return ;
-	push(stack_a, stack_b);
+	if (*stack_b)
+		push(stack_a, stack_b);
 }
